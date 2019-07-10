@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "preact-i18n-issue",
+  "version": "0.1.0",
+  "license": "Private",
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "node build/server.js"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "eslint": "^5.5.0",
+    "razzle-plugin-scss": "^3.0.0",
+    "webpack": "^4.34.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "preact": "^8.4.2",
+    "preact-helmet": "^4.0.0-alpha-3",
+    "preact-i18n": "^1.4.0",
+    "preact-render-to-string": "^4.1.0",
+    "preact-router": "^2.6.1",
+    "razzle": "3.0.0"
+  },
+  "engines": {
+    "node": "10.9.0",
+    "npm": "6.2.0"
+  }
+}

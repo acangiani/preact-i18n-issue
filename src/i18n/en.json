@@ -1,0 +1,8 @@
+{
+  "first": {
+    "title": "Foo - Bar"
+  },
+  "second": {
+    "title": "{{field}} - Bar"
+  }
+}

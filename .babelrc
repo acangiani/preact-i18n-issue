@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "razzle/babel",
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-transform-react-jsx", { "pragma": "h" }],
+  ]
+}
+
