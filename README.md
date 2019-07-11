@@ -42,3 +42,26 @@ render(<Text id="second.title" " fields={{ field: props.slug }}>default text</Te
 but I only obtained the default text regardless of the i18n definitions loaded on the ```IntlProvider```.
 
 Bottom line what I need it's to obtain the translated text as a string but I'm unable to do so, could you please help with this?
+
+
+# [Solution](https://github.com/synacor/preact-i18n/issues/35) by [@pl12133 ](https://github.com/pl12133)
+
+```js
+@withText((props) => ({
+  title: <Text id="second.title" fields={{ field: props.slug }} />
+}))
+export default class SecondView extends Component {
+  render(props, state) {
+    return (
+      <div>
+        <Helmet
+          title={props.title}
+          meta={[
+            {name: "title", content: props.title },
+          ]}
+        />
+      </div>
+    );
+  }
+};
+```
